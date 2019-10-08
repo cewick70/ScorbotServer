@@ -8,7 +8,7 @@ if(isvalid(ScTCP))
         %wait for a reply
         while(ScTCP.BytesAvailable == 0)
         end
-        rval = read(ScTCP,1,'uint16');
+        rval = read(ScTCP,1,'double');
     else
         disp('Error - Must Complete Initialization First');
         rval = 0;
